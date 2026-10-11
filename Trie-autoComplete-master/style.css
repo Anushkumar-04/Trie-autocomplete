@@ -1,0 +1,72 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #eef2f3, #8e9eab);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+input#input {
+  padding: 12px 20px;
+  width: 100%;
+  max-width: 500px;
+  font-size: 1.2rem;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input#input:focus {
+  border-color: #0077cc;
+  box-shadow: 0 0 5px rgba(0, 119, 204, 0.5);
+}
+
+ul#suggestions {
+  list-style: none;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 500px;
+  padding: 0;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+ul#suggestions li {
+  padding: 12px 20px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+ul#suggestions li:last-child {
+  border-bottom: none;
+}
+
+ul#suggestions li:hover {
+  background-color: #f0f8ff;
+}
+.footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
